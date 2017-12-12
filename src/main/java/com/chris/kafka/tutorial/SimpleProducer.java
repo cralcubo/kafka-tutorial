@@ -24,7 +24,7 @@ public class SimpleProducer {
 		p.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 		
 		Producer<String, String> producer = new KafkaProducer<>(p);
-		ProducerRecord<String, String> record = new ProducerRecord<String, String>(topicName, "KEY", "VALUE");
+		ProducerRecord<String, String> record = new ProducerRecord<>(topicName, "KEY", "VALUE");
 		producer.send(record);
 		producer.close();
 	}
