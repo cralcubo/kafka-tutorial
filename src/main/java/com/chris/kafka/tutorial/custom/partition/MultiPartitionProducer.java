@@ -1,4 +1,4 @@
-package com.chris.kafka.tutorial.partition.custom;
+package com.chris.kafka.tutorial.custom.partition;
 
 import java.util.Properties;
 
